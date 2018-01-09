@@ -9,11 +9,11 @@ podTemplate(label: 'docker', namespace: 'default',
 
   def gitSrc = 'https://github.com/jconallen/SumApp.git'
   def dockerRegistry = 'https://mycluster.icp:8500'
-  def image = 'mycluster.icp:8500/default/sumapp'
+  def image = 'mycluster.icp:8500/demo/sumapp'
   def deployment = 'deployment/sumapp-deploy.yml'
   def service = 'deployment/sumapp-svc.yml'
   def selector = 'sumapp'
-  def namespace = 'default'
+  def namespace = 'demo'
   
   node('docker') {
     
