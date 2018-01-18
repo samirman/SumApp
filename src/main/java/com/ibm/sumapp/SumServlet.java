@@ -54,7 +54,7 @@ public class SumServlet extends HttpServlet {
 	        System.out.println( msg );
 
 		} else {
-			int sum = op1 + op2;
+			int sum = op1 * op2;
 			String res = param_op1 + " + " + param_op2 + " = " + sum;
 			System.out.println( "Summing: " + res );
 			response.setStatus(200);
